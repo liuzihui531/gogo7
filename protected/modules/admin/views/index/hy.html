@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Insert title here</title>
+<link rel="stylesheet" href="__PUBLIC__/Css/public.css" />
+</head>
+<body>
+	<table class='table'>
+		<tr>
+			<th colspan='4'>登录信息</th>
+		</tr>
+		<tr>
+			<td colspan='4'>您好：{$Think.SESSION.Admin_Name}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			您上次登录时间是：{$Think.SESSION.Last_Login_Time}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			IP是：{$Think.SESSION.Last_IP_Address}
+		</td>
+		<tr>
+			<th colspan='4'>系统信息</th>
+		</tr>
+		<tr>
+			<td width="19%" valign="top">服务器操作系统</td>
+		    <td width="32%" valign="top">{$Think.ENV.OS}</td>
+		    <td width="22%" valign="top">软件版本</td>
+		    <td width="27%" valign="top">{$Think.SERVER.SERVER_SOFTWARE}</td>
+		</tr>
+		<tr>
+		  <td valign="top">服务器协议</td>
+		  <td valign="top">{$Think.SERVER.SERVER_PROTOCOL}</td>
+		  <td valign="top">服务器名称</td>
+		  <td valign="top">{$Think.SERVER.SERVER_NAME}</td>
+	  </tr>
+		<tr>
+		  <td valign="top">网关接口</td>
+		  <td valign="top">{$Think.SERVER.GATEWAY_INTERFACE}</td>
+		  <td valign="top">服务器IP</td>
+		  <td valign="top">{$Think.SERVER.SERVER_ADDR}</td>
+	  </tr>
+		<tr>
+		  <td valign="top">Socket支持</td>
+		  <td valign="top">是</td>
+		  <td valign="top">时区设置</td>
+		  <td valign="top">中华人民共和国</td>
+	  </tr>
+		<tr>
+		  <td valign="top">是否开启文件上传</td>
+		  <td valign="top"><php>echo ini_get('file_uploads')</php>
+		    &nbsp;&nbsp;[1代表开启,0代表关闭]</td>
+		  <td valign="top">文件上传的最大大小</td>
+		  <td valign="top"><php>echo ini_get('upload_max_filesize')</php></td>
+	  </tr>
+		<tr>
+		  <td valign="top">编码</td>
+		  <td valign="top">UTF-8</td>
+		  <td valign="top">是否自动转义</td>
+		  <td valign="top"><php>echo ini_get('magic_quotes_gpc');</php></td>
+	  </tr>
+	</table>
+</body>
+</html>

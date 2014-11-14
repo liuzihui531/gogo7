@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<css file="__PUBLIC__/Css/public.css" />
+<script type="text/javascript" src="__PUBLIC__/Js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/gogousa.js"></script>
+</head>
+<body>
+	<table class='table'>
+		<tr>
+			<th colspan='9'>订单管理</th>
+		</tr>
+		<tr>
+<!--			<td colspan='9'>
+                            
+				<form action="{:U(GROUP_NAME.'/ShopOrder/index')}" method='get'>
+                                    <a id='delall' class='bta' href="{:U(GROUP_NAME.'/ShopOrder/create')}" >添加订单</a>
+					<span id='delall' class='bta' onclick='delall()'>删除</span>
+                                        <input type='text' name='name' <?php if(isset($_GET['name'])): ?>value='<?php echo $_GET['name'] ?>'<?php endif; ?> style='height:27px;margin:0 10px' />
+					<input type='submit'  class='bt3' value='搜索' />
+				</form>
+			</td>-->
+		</tr>
+		<tr>
+			<td width='5%'>编号</td>
+<!--			<td width='8%'><input type='checkbox'  id='checkAll' myid='0'>&nbsp;全选</td>-->
+			<td width='20%'>订单号</td>
+                        <td width='20%'>商品名称</td>
+                        <td width='8%'>是否电子券</td>
+                        <td width='8%'>状态</td>
+			<td width='12%'>操作</td>
+		</tr>
+		<foreach name='list' item='v'>
+			<tr class='fortr'>
+				<td>{$v.id}</td>
+<!--                                <td><input type='checkbox' name='del' myid='{$v.id}' /> </td>-->
+                                <td>{$v.order_sn}</td>
+                                <td>{$v.goods_name}</td>
+                                <td><?php echo $v['is_coupon'] ? '是':'否'; ?></td>
+                                <td>
+                                    <?php echo get_order_state($v['state']); ?>
+                                    
+                                </td>
+                                <td>
+<!--					<a href="{:U(GROUP_NAME.'/ShopOrder/update',array('id'=>$v['id']))}">[修改]</a>&nbsp;&nbsp;
+					<a onclick='return confirm("确定要删除？")' href="{:U(GROUP_NAME.'/ShopOrder/delete',array('id'=>$v['id']))}">[删除]</a>-->
+<a href="<?php echo U(GROUP_NAME.'/ShopOrder/view',array('order_id'=>$v['id'])) ?>" >详情</a>
+				</td>
+			</tr>
+		</foreach>
+		<tr>
+			<td colspan='9' align='right'><div class='page'>{$page}</div></td>
+		</tr>
+	</table>
+	<form id='form1' action="{:U(GROUP_NAME.'/ShopOrder/delete')}" method="post">
+		<input type='hidden' name='id' id='myids'  />
+	</form>
+</body>
+</html>

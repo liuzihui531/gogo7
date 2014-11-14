@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<css file="__PUBLIC__/Css/public.css" />
+<script type="text/javascript" src="__PUBLIC__/Js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/gogousa.js"></script>
+</head>
+<body>
+    <table class="table">
+        <tr><td colspan='2'><a href='javascript:history.back()'>返回</a></td></tr>
+        <tr>
+            <td align="right" style="width:100px">订单号</td><td><?php echo $info['order_sn'] ?></td>
+        </tr>
+        <tr>
+            <td align="right" style="width:100px">用户</td><td><?php echo $info['Member_Name'] ?></td>
+        </tr>
+        <tr>
+            <td align="right" style="width:100px">商品名称</td><td><a href="<?php echo U('/Shop/detail',array('id'=>$info['goods_id'])) ?>" target="_blank"><?php echo $info['goods_name'] ?></a></td>
+        </tr>
+        <tr>
+            <td align="right" style="width:100px">商品标题</td><td><?php echo $info['goods_title'] ?></td>
+        </tr>
+        <tr>
+            <td align="right" style="width:100px">是否电子券</td><td><?php echo $info['is_coupon'] ? '是' : '否' ?></td>
+        </tr>
+        <?php if($info['is_coupon']): ?>
+        <tr>
+            <td align="right" style="width:100px">电子码</td><td><?php echo $info['coupon_sn'] ?></td>
+        </tr>
+        <?php endif; ?>
+        <tr>
+            <td align="right" style="width:100px">收货人姓名</td><td><?php echo $info['addr_name'] ?></td>
+        </tr>
+        <tr>
+            <td align="right" style="width:100px">地址</td><td><?php echo $info['address'] ?></td>
+        </tr>
+        <tr>
+            <td align="right" style="width:100px">收货人电话</td><td><?php echo $info['addr_tel'] ?></td>
+        </tr>
+        <tr>
+            <td align="right" style="width:100px">订单状态</td>
+            <td> 
+                <form action="<?php echo U(GROUP_NAME.'/ShopOrder/change_state') ?>" method="post">
+                    <?php echo get_order_state($info['state']); ?>
+                &nbsp;&nbsp;
+                改变订单状态？
+                <?php if($info['is_coupon']){
+                    $order_state_arr = get_coupon_order_state();
+                }else{
+                    $order_state_arr = get_not_coupon_order_state();
+                } ?>
+                
+                <select name="state">
+                        <?php foreach($order_state_arr as $k=>$v): ?>
+                    <option value="<?php echo $k ?>" <?php if($k == $info['state']): ?>selected="selected"<?php endif; ?>>
+                                <?php echo $v ?>
+                    </option>
+                        <?php endforeach; ?>
+                </select>
+                    <input type="hidden" name="order_id" value="<?php echo $info['id'] ?>" />
+                    <input type="submit" value="修改" />
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" style="width:100px">商品单价</td><td><?php echo $info['goods_price'] ?></td>
+        </tr>
+        <tr>
+            <td align="right" style="width:100px">商品数量</td><td><?php echo $info['goods_count'] ?></td>
+        </tr>
+        <tr>
+            <td align="right" style="width:100px">商品总价</td><td><?php echo $info['total_price'] ?></td>
+        </tr>
+        <?php if(intval($info['state']) > 0 && $order['buy_time']): ?>
+            <tr>
+                <td align="right" style="width:100px">购买时间</td><td><?php echo date('m-d-Y',$info['buy_time']) ?></td>
+            </tr>
+        <?php endif; ?>
+        <?php if(intval($info['is_coupon']) > 0 && $order['expire_time']): ?>
+            <tr>
+                <td align="right" style="width:100px">过期时间</td><td><?php echo date('m-d-Y',$info['expire_time']) ?></td>
+            </tr>
+        <?php endif; ?>
+            <tr>
+            <td align="right" style="width:100px">所属商家</td><td><?php echo $info['name'] ?></td>
+        </tr>
+    </table>
+</body>
+</html>
+

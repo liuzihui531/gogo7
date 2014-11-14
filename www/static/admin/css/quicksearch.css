@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+#divselectchilid{
+     position:absolute;
+     z-index:1;
+     top:35px;
+     left:-1px;
+     background-color:#fff;
+     border-right:1px solid #ddd;
+     border-left:1px solid #ddd;
+     font-size:12px;
+     width:50px;
+     display:none;
+   }
+ #divselect{
+     height:35px;
+	 line-height:35px;
+	 width:50px;
+	 text-align:center;
+     border:1px solid #ddd;
+     position:relative;
+     font-size:12px;
+     cursor:pointer;
+	 float:left;
+   }
+  #myselected{float:left}
+  #myselected select{min-width:150px;padding:6px 0px}
+  #shaixuan{float:left;margin-left:15px;}
+  #divselect:hover{
+  	background:black;
+	color:white;
+  }
+  #divselect:hover div{
+  	color:black;
+  }
+  #divselectchilid div:hover{
+  	background:black;
+	color:white;
+  }
+  #divselectchilid div{
+  	border-bottom:1px solid #ddd;
+  }

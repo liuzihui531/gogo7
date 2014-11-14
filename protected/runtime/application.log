@@ -1,0 +1,1398 @@
+2014/09/26 00:43:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/screen.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 00:43:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/form.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 00:43:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/print.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/print.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 00:43:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/main.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/main.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 00:43:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/26 00:44:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'gogo7'' in D:\wamp\www\app\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\wamp\www\app\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\wamp\www\app\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\wamp\www\app\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\wamp\www\app\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1428): CActiveRecord->getDbConnection()
+#6 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1517): CActiveRecord->getTableAlias(true)
+#7 D:\wamp\www\app\gogo7\protected\modules\admin\models\LoginForm.php(37): CActiveRecord->findByAttributes(Array)
+#8 D:\wamp\www\app\framework\validators\CInlineValidator.php(42): LoginForm->isDisabled('username', Array)
+#9 D:\wamp\www\app\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'username')
+#10 D:\wamp\www\app\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#11 D:\wamp\www\app\framework\web\widgets\CActiveForm.php(920): CModel->validate(NULL)
+#12 D:\wamp\www\app\gogo7\protected\modules\admin\controllers\LoginController.php(41): CActiveForm::validate(Object(LoginForm))
+#13 D:\wamp\www\app\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#14 D:\wamp\www\app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 D:\wamp\www\app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 D:\wamp\www\app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('')
+#18 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#19 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#21 {main}
+REQUEST_URI=/admin/login.html
+HTTP_REFERER=http://gogo7.loc/admin/login.html
+---
+2014/09/26 00:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/print.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/print.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 00:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/main.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/main.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 00:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/form.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 00:52:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/screen.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 00:54:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/26 00:55:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/26 00:57:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/26 00:58:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/26 01:02:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/main.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/main.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 01:02:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/form.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 01:02:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/print.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/print.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 01:02:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/screen.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 01:02:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/09/26 01:28:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2014/09/26 01:28:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/screen.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/screen.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/screen.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 01:28:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/print.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/print.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/print.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 01:28:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/main.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/main.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/main.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 01:28:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/form.css"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('css/form.css')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/form.css
+HTTP_REFERER=http://gogo7.loc/
+---
+2014/09/26 01:28:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/10/09 01:26:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/10/09 09:47:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/10/09 09:47:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:47:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:47:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:47:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:47:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:47:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:47:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:47:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:47:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:47:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:47:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:47:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:48:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:48:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 09:48:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:28:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:28:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:28:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:30:20 [error] [exception.CException] exception 'CException' with message '属性 "CRegularExpressionValidator.0" 未被定义.' in D:\wamp\www\app\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\app\framework\validators\CValidator.php(189): CComponent->__set('0', '/[*+]\d$/')
+#1 D:\wamp\www\app\framework\base\CModel.php(287): CValidator::createValidator('match', Object(Seller), 'location', Array)
+#2 D:\wamp\www\app\framework\base\CModel.php(260): CModel->createValidators()
+#3 D:\wamp\www\app\framework\web\helpers\CHtml.php(2236): CModel->getValidators('seller_name')
+#4 D:\wamp\www\app\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(Seller), 'seller_name', Array)
+#5 D:\wamp\www\app\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(Seller), 'seller_name', Array)
+#6 D:\wamp\www\app\gogo7\protected\modules\admin\views\seller\_form.php(23): CActiveForm->textField(Object(Seller), 'seller_name')
+#7 D:\wamp\www\app\framework\web\CBaseController.php(126): require('D:\wamp\www\app...')
+#8 D:\wamp\www\app\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\wamp\www\app...', Array, true)
+#9 D:\wamp\www\app\framework\web\CController.php(869): CBaseController->renderFile('D:\wamp\www\app...', Array, true)
+#10 D:\wamp\www\app\framework\web\CController.php(782): CController->renderPartial('_form', Array, true)
+#11 D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php(24): CController->render('_form', Array)
+#12 D:\wamp\www\app\framework\web\actions\CInlineAction.php(49): SellerController->actionCreate()
+#13 D:\wamp\www\app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 D:\wamp\www\app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 D:\wamp\www\app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('create')
+#17 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/cr...')
+#18 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#20 {main}
+REQUEST_URI=/admin/seller/create.html
+---
+2014/10/09 10:32:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:32:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:33:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:33:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:34:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:35:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:36:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:36:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:36:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:36:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:36:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:37:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:37:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:37:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:37:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:37:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:37:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:37:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:38:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:38:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:39:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:39:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:39:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:39:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:39:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:39:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:39:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:40:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:41:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:41:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "save" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('save')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('save')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/seller/sa...')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/seller/save.html
+HTTP_REFERER=http://gogo7.loc/admin/seller/create.html
+---
+2014/10/09 10:56:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery-1.10.1.min.js"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.10....')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.10.1.min.js
+HTTP_REFERER=http://gogo7.loc/admin/seller/save.html
+---
+2014/10/09 10:56:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery-1.10.1.min.js"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.10....')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.10.1.min.js
+HTTP_REFERER=http://gogo7.loc/admin/seller/save.html
+---
+2014/10/10 09:36:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/10/10 09:37:30 [error] [php] key_exists() expects parameter 2 to be array, null given (D:\wamp\www\app\gogo7\protected\models\Outlets.php:153)
+Stack trace:
+#0 D:\wamp\www\app\framework\web\actions\CInlineAction.php(49): AjaxController->actionGetItem()
+#1 D:\wamp\www\app\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\app\framework\web\CController.php(286): AjaxController->runAction()
+#3 D:\wamp\www\app\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#4 D:\wamp\www\app\framework\web\CWebApplication.php(282): AjaxController->run()
+#5 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\wamp\www\app\gogo7\www\index.php(12): CWebApplication->run()
+REQUEST_URI=/admin/ajax/getItem.html
+in D:\wamp\www\app\gogo7\protected\models\Outlets.php (153)
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\AjaxController.php (124)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 09:37:34 [error] [php] key_exists() expects parameter 2 to be array, null given (D:\wamp\www\app\gogo7\protected\models\Outlets.php:153)
+Stack trace:
+#0 D:\wamp\www\app\framework\web\actions\CInlineAction.php(49): AjaxController->actionGetItem()
+#1 D:\wamp\www\app\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\app\framework\web\CController.php(286): AjaxController->runAction()
+#3 D:\wamp\www\app\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#4 D:\wamp\www\app\framework\web\CWebApplication.php(282): AjaxController->run()
+#5 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\wamp\www\app\gogo7\www\index.php(12): CWebApplication->run()
+REQUEST_URI=/admin/ajax/getItem.html
+in D:\wamp\www\app\gogo7\protected\models\Outlets.php (153)
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\AjaxController.php (124)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 09:41:07 [error] [php] key_exists() expects parameter 2 to be array, null given (D:\wamp\www\app\gogo7\protected\models\Outlets.php:153)
+Stack trace:
+#0 unknown(0): SellerController->actionUpdate()
+#1 D:\wamp\www\app\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 D:\wamp\www\app\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 D:\wamp\www\app\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\www\app\framework\web\CController.php(286): SellerController->runAction()
+#5 D:\wamp\www\app\framework\web\CController.php(265): SellerController->runActionWithFilters()
+#6 D:\wamp\www\app\framework\web\CWebApplication.php(282): SellerController->run()
+#7 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\wamp\www\app\gogo7\www\index.php(12): CWebApplication->run()
+REQUEST_URI=/admin/seller/update/id/1.html
+in D:\wamp\www\app\gogo7\protected\models\Outlets.php (153)
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (68)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 09:41:26 [error] [php] key_exists() expects parameter 2 to be array, null given (D:\wamp\www\app\gogo7\protected\models\Outlets.php:153)
+Stack trace:
+#0 unknown(0): SellerController->actionUpdate()
+#1 D:\wamp\www\app\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#2 D:\wamp\www\app\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 D:\wamp\www\app\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\www\app\framework\web\CController.php(286): SellerController->runAction()
+#5 D:\wamp\www\app\framework\web\CController.php(265): SellerController->runActionWithFilters()
+#6 D:\wamp\www\app\framework\web\CWebApplication.php(282): SellerController->run()
+#7 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\wamp\www\app\gogo7\www\index.php(12): CWebApplication->run()
+REQUEST_URI=/admin/seller/update/id/1.html
+in D:\wamp\www\app\gogo7\protected\models\Outlets.php (153)
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (68)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 09:45:41 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (94)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 09:46:12 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (94)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 09:46:12 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (171)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 09:46:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery-1.10.1.min.js"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.10....')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.10.1.min.js
+HTTP_REFERER=http://gogo7.loc/admin/seller/save.html
+---
+2014/10/10 09:49:07 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (103)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 09:49:07 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (103)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 09:49:09 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (103)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 09:49:09 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (180)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 09:49:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery-1.10.1.min.js"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.10....')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.10.1.min.js
+HTTP_REFERER=http://gogo7.loc/admin/seller/save.html
+---
+2014/10/10 10:04:23 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (103)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 10:04:28 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (103)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 10:04:29 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (180)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 10:04:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery-1.10.1.min.js"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.10....')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.10.1.min.js
+HTTP_REFERER=http://gogo7.loc/admin/seller/save.html
+---
+2014/10/10 10:05:32 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (266)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 10:05:32 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (333)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 10:05:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery-1.10.1.min.js"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.10....')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.10.1.min.js
+HTTP_REFERER=http://gogo7.loc/admin/seller/quicksave.html
+---
+2014/10/10 10:05:44 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (266)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 10:05:49 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (266)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 10:05:49 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (333)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 10:05:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery-1.10.1.min.js"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.10....')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.10.1.min.js
+HTTP_REFERER=http://gogo7.loc/admin/seller/quicksave.html
+---
+2014/10/10 10:06:19 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (266)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 10:06:22 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (266)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 10:06:23 [warning] [application] Failed to set unsafe attribute "cate_id" of "Seller".
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\SellerController.php (333)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/10/10 10:06:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/jquery-1.10.1.min.js"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.10....')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.10.1.min.js
+HTTP_REFERER=http://gogo7.loc/admin/seller/quicksave.html
+---
+2014/11/06 04:16:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/11/07 04:21:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/11/07 04:23:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\wamp\www\app\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('phone/favorite')
+#3 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/phone/favorite
+---
+2014/11/13 01:36:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/11/13 01:37:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "UploadFiles/Sellers/53fc4033725cd.jpg"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('UploadFiles/Sel...')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/UploadFiles/Sellers/53fc4033725cd.jpg
+HTTP_REFERER=http://gogo7.loc/admin/seller/update/id/12478.html
+---
+2014/11/13 01:37:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "UploadFiles/SellersBrand/53b4c0b03f1c9.png"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('UploadFiles/Sel...')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/UploadFiles/SellersBrand/53b4c0b03f1c9.png
+HTTP_REFERER=http://gogo7.loc/admin/seller/update/id/12478.html
+---
+2014/11/13 01:37:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "UploadFiles/SellersBrand/53b4c0b041185.png"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('UploadFiles/Sel...')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/UploadFiles/SellersBrand/53b4c0b041185.png
+HTTP_REFERER=http://gogo7.loc/admin/seller/update/id/12478.html
+---
+2014/11/13 01:37:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "UploadFiles/SellersBrand/53b4c0b042146.png"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('UploadFiles/Sel...')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/UploadFiles/SellersBrand/53b4c0b042146.png
+HTTP_REFERER=http://gogo7.loc/admin/seller/update/id/12478.html
+---
+2014/11/13 01:37:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "UploadFiles/SellersBrand/53b4c0b042f56.png"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('UploadFiles/Sel...')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/UploadFiles/SellersBrand/53b4c0b042f56.png
+HTTP_REFERER=http://gogo7.loc/admin/seller/update/id/12478.html
+---
+2014/11/13 01:37:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gogo7.bijiacate' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `bijiacate`.
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\BijiacateController.php (23)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/11/13 01:37:47 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Bijiacate" 对应的 table "bijiacate".' in D:\wamp\www\app\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Bijiacate))
+#1 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 D:\wamp\www\app\gogo7\protected\modules\admin\controllers\BijiacateController.php(23): CActiveRecord->findAll(Object(CDbCriteria))
+#5 D:\wamp\www\app\framework\web\actions\CInlineAction.php(49): BijiacateController->actionIndex()
+#6 D:\wamp\www\app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('')
+#10 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/bijiacate')
+#11 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#13 {main}
+REQUEST_URI=/admin/bijiacate.html
+HTTP_REFERER=http://gogo7.loc/admin.html
+---
+2014/11/13 01:37:48 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gogo7.bijiacate' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `bijiacate`.
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\BijiacateController.php (23)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/11/13 01:37:48 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Bijiacate" 对应的 table "bijiacate".' in D:\wamp\www\app\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Bijiacate))
+#1 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 D:\wamp\www\app\gogo7\protected\modules\admin\controllers\BijiacateController.php(23): CActiveRecord->findAll(Object(CDbCriteria))
+#5 D:\wamp\www\app\framework\web\actions\CInlineAction.php(49): BijiacateController->actionIndex()
+#6 D:\wamp\www\app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('')
+#10 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/bijiacate')
+#11 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#13 {main}
+REQUEST_URI=/admin/bijiacate.html
+HTTP_REFERER=http://gogo7.loc/admin.html
+---
+2014/11/13 01:37:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gogo7.ibijia' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `ibijia`.
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\IBijiaController.php (23)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/11/13 01:37:49 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Ibijia" 对应的 table "ibijia".' in D:\wamp\www\app\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Ibijia))
+#1 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 D:\wamp\www\app\gogo7\protected\modules\admin\controllers\IBijiaController.php(23): CActiveRecord->findAll(Object(CDbCriteria))
+#5 D:\wamp\www\app\framework\web\actions\CInlineAction.php(49): IBijiaController->actionIndex()
+#6 D:\wamp\www\app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('')
+#10 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/ibijia')
+#11 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#13 {main}
+REQUEST_URI=/admin/ibijia.html
+HTTP_REFERER=http://gogo7.loc/admin.html
+---
+2014/11/13 01:37:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gogo7.bijiacate' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `bijiacate`.
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\BijiacateController.php (23)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/11/13 01:37:50 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Bijiacate" 对应的 table "bijiacate".' in D:\wamp\www\app\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Bijiacate))
+#1 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 D:\wamp\www\app\gogo7\protected\modules\admin\controllers\BijiacateController.php(23): CActiveRecord->findAll(Object(CDbCriteria))
+#5 D:\wamp\www\app\framework\web\actions\CInlineAction.php(49): BijiacateController->actionIndex()
+#6 D:\wamp\www\app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('')
+#10 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/bijiacate')
+#11 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#13 {main}
+REQUEST_URI=/admin/bijiacate.html
+HTTP_REFERER=http://gogo7.loc/admin.html
+---
+2014/11/13 01:37:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gogo7.ibijia' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `ibijia`.
+in D:\wamp\www\app\gogo7\protected\modules\admin\controllers\IBijiaController.php (23)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/11/13 01:37:51 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Ibijia" 对应的 table "ibijia".' in D:\wamp\www\app\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Ibijia))
+#1 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#4 D:\wamp\www\app\gogo7\protected\modules\admin\controllers\IBijiaController.php(23): CActiveRecord->findAll(Object(CDbCriteria))
+#5 D:\wamp\www\app\framework\web\actions\CInlineAction.php(49): IBijiaController->actionIndex()
+#6 D:\wamp\www\app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('')
+#10 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/ibijia')
+#11 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#13 {main}
+REQUEST_URI=/admin/ibijia.html
+HTTP_REFERER=http://gogo7.loc/admin.html
+---
+2014/11/13 04:39:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/11/13 07:40:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/11/13 07:40:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wamp\www\app\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/11/13 07:47:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cate_id' in 'field list'. The SQL statement executed was: SELECT id,address,cate_id,location,big_image,seller_name,shopping_index,introduce,contact,traffic_mode FROM `seller` `t` WHERE (city_id=:ycp0) AND (if_use=:ycp1) ORDER BY click desc,is_recommend desc,id desc.
+in D:\wamp\www\app\gogo7\protected\modules\phone\controllers\SellerController.php (36)
+in D:\wamp\www\app\gogo7\protected\modules\phone\controllers\SellerController.php (21)
+in D:\wamp\www\app\gogo7\www\index.php (12)
+2014/11/13 07:47:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cate_id' in 'field list'. The SQL statement executed was: SELECT id,address,cate_id,location,big_image,seller_name,shopping_index,introduce,contact,traffic_mode FROM `seller` `t` WHERE (city_id=:ycp0) AND (if_use=:ycp1) ORDER BY click desc,is_recommend desc,id desc' in D:\wamp\www\app\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\wamp\www\app\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 D:\wamp\www\app\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\wamp\www\app\gogo7\protected\modules\phone\controllers\SellerController.php(36): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\wamp\www\app\gogo7\protected\modules\phone\controllers\SellerController.php(21): SellerController->getSeller(Array)
+#5 D:\wamp\www\app\framework\web\actions\CInlineAction.php(49): SellerController->actionGetSellerByCityId()
+#6 D:\wamp\www\app\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\app\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\app\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\wamp\www\app\framework\web\CWebApplication.php(282): CController->run('getsellerbycity...')
+#10 D:\wamp\www\app\framework\web\CWebApplication.php(141): CWebApplication->runController('phone/seller/ge...')
+#11 D:\wamp\www\app\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 D:\wamp\www\app\gogo7\www\index.php(12): CApplication->run()
+#13 {main}
+REQUEST_URI=/phone/seller/getsellerbycityid?city_id=62
+---

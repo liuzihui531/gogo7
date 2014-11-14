@@ -1,0 +1,111 @@
+*{padding:0px;margin: 0px;font-size:14px;font-family:微软雅黑}
+body,ul,li,div,dl,dd,dt,table,tr,td,p,iframe{margin:0;padding:0}
+.clear{clear:both}
+ul,ol{list-style:none;}
+a{ text-decoration: none;color:#3361AD;}
+iframe{width:100%;height:100%;border:none;}
+table{width:100%;}
+table,th,td{ border-collapse: collapse;background:#fff;}
+th{ font-size:20px;text-align:left}
+th,td{padding:8px 8px;}
+body .table.index th,body .table.index td{padding:8px;}
+input,button{ border:solid 1px #dcdcdc;height:20px;padding:3px 6px;color:#999;background:#fff; vertical-align: middle;}
+select{border:solid 1px #ccc;}
+img{border:none; vertical-align: middle;}
+.len100{width:100px;}
+.len150{width:159px;}
+.len200{width:200px;}
+.len250{width:250px;}
+.len300{width:300px;}
+.len350{width:350px;}
+.len400{width:400px;}
+.l{float:left;}
+.r{float:right;}
+.c{clear: both;}
+em{color:#f00;font-style:normal;line-height:1.8em;border-collapse:collapse;}/**红星**/
+.submit{background:#255E9C;height:30px;padding:0px 30px;line-height:1.8em;color:#fff;font-size:16px; cursor: pointer;}
+/*.error{padding:3px;line-height: 1.2em;margin-top:8px; font-size:12px;color:#f00;}*/
+span.msg{color:#666;border:solid 1px #eee;padding:6px;margin-left:10px;}
+.content{padding:10px;}
+/*****分页处理*******/
+.page li,.page ul{display:inline}
+.page {
+	font-size:12px;color:#666;PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 3px; PADDING-TOP: 3px;
+	
+}
+.page .count,.page .nowpage{margin-right:10px;}
+.page .selfpage {
+	background:#2E6AB1;color:#fff;BORDER-RIGHT: #9aafe5 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #9aafe5 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; BORDER-LEFT: #9aafe5 1px solid; MARGIN-RIGHT: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #9aafe5 1px solid; TEXT-DECORATION: none
+}
+.page a {
+	  border: rgb(204,204,204) 1px solid; COLOR: black; TEXT-DECORATION: none;padding:5px 10px;margin-left:8px;font-weight:bold
+}
+.page a:hover {
+	 background:black;color:white;font-weight:bold;
+}
+.page a:active {
+	BORDER-RIGHT: #2b66a5 1px solid; BORDER-TOP: #2b66a5 1px solid; BORDER-LEFT: #2b66a5 1px solid; COLOR: #000; BORDER-BOTTOM: #2b66a5 1px solid; BACKGROUND-COLOR: lightyellow
+}
+.page span.current {
+	background:black;color:white;TEXT-DECORATION: none;padding:5px 10px;margin-left:8px;font-weight:bold
+}
+.page .current a{
+    background:black;color:white;TEXT-DECORATION: none;padding:5px 10px;margin-left:8px;font-weight:bold
+}
+.page span.disabled {
+	border:rgb(204,204,204) 1px solid; PADDING-RIGHT: 5px;  PADDING-LEFT: 5px; PADDING-BOTTOM: 2px;  COLOR: #929292; MARGIN-RIGHT: 2px; PADDING-TOP: 2px; 
+}
+.page #pagekeydown{}
+.page input{height:22px;line-height:16px;padding:0px 0px;margin:0px;margin-right: 5px;}
+.page button{height:22px;line-height: 6px;display: inline;}
+.page select{}
+/****表格样式1********/
+.table{width:100%;}
+.table,.table td{border:solid 1px #ccc;}
+.table th{border:solid 1px #ccc;width:100px;}
+.table thead tr td{background: #eee;color:#333;}
+
+/******按钮*******/
+.bt1{padding:8px 15px;margin-right:6px; background: #ccc;color:#000;border-radius: 3px; text-align: center;float:left;display: block;cursor: pointer;height:50px}
+.bt2{height:35px;padding:8px 15px; background: #4884D5;color:#fff;border-radius: 3px; text-align: center;display: block;cursor: pointer;}
+.bt3{height:35px;border:solid 1px #dcdcdc;padding:3px 15px;color:#999;background:#fff; vertical-align: middle;}
+.bta{height:35px;padding:8px 15px; background: #4884D5;color:#fff;border-radius: 3px; text-align: center;cursor:pointer;}
+/*页面*/
+.field_desc{color:red;padding-left:10px}
+.main_brand,.feature_spot,.main_seller,.main_scene,.main_brand_radio{
+	width:600px;
+	height:auto;
+	background:#1986C7;
+	position:relative;
+	z-index:999;
+	padding:5px 20px 10px 20px;
+	color:white;
+	border-radius:4px;
+	display:none
+}
+.close,.feature_close,.seller_close{cursor:pointer;padding:2px 5px}
+body .form-error{padding-left: 10px;color:red}
+body .form-error .errorMessage{font-size:8px !important;}
+.form-error,.errorMessage{display: inline}
+form#id-form input[type="text"]{width:300px}
+#id-form span.required{color:red}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
